@@ -69,10 +69,10 @@ You can get the experimental code via hyperlinks.
 After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change the weights with the parameters in 'params' folder in each experiment folder.
 (if what you wanted is just testing the model, don't change the weights.)
 
-1. HuBERT-Base (VoxCeleb1). (<a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox1/Fine-tuning(phase2)">
-2. HuBERT-Base (VoxCeleb2). (<a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox2/Fine-tuning(phase2)">
-3. WavLM-Base+ (VoxCeleb1). (<a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox1/Fine-tuning(phase2)">
-4. WavLM-Base+ (VoxCeleb2). (<a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox2/Fine-tuning(phase2)">
+1. HuBERT-Base (VoxCeleb1). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox1/Fine-tuning(phase2)">
+2. HuBERT-Base (VoxCeleb2). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox2/Fine-tuning(phase2)">
+3. WavLM-Base+ (VoxCeleb1). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox1/Fine-tuning(phase2)">
+4. WavLM-Base+ (VoxCeleb2). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox2/Fine-tuning(phase2)">
 
 ### Logger
 

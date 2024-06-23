@@ -1,0 +1,1 @@
+sudo docker build -t env202212:22.12 ./Dockerfile

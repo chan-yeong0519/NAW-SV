@@ -60,10 +60,10 @@ Set experimental arguments in `arguments.py` file. Here is list of system argume
 You can get the experimental code via hyperlinks. 
 <br> Note that we provide our **trained model weights** and **training logs** (such as loss, validation results) for re-implementation. You can find these in 'exps_logs' folder stored in each experiment folder. 
 
-1. HuBERT-Base: EER 1.89% and 4.09% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox1/NAW-SV(phase1)">
-2. HuBERT-Base: EER 1.12% and 2.89% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/HuBERT_Vox2/NAW-SV(phase1)">
-3. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox1/NAW-SV(phase1)">
-4. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/WavLM_Vox2/NAW-SV(phase1)">
+1. HuBERT-Base: EER 1.89% and 4.09% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/NAW-SV(phase1)/HuBERT/Vox1">
+2. HuBERT-Base: EER 1.12% and 2.89% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/NAW-SV(phase1)/HuBERT/Vox2">
+3. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/NAW-SV(phase1)/WavLM/Vox1">
+4. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/NAW-SV(phase1)/WavLM/Vox2">
 
 ### 2.2. Fine-tuning (phase2)
 After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change the weights with the parameters in 'params' folder in each experiment folder.
@@ -96,15 +96,15 @@ We have a basic logger that stores information in local. However, if you would l
 
 ```python
 # Just remove "#" in logger which you use
-
-logger = LogModuleController.Builder(args['name'], args['project'],
-        ).tags(args['tags']
-        ).description(args['description']
-        ).save_source_files(args['path_scripts']
-        ).use_local(args['path_log']
-        #).use_wandb(args['wandb_user'], args['wandb_token'] <- here
-        #).use_neptune(args['neptune_user'], args['neptune_token'] <- here
-        ).build()
+if process_id == 0:
+	builder = log.LoggerList.Builder(args['name'], args['project'], args['tags'], args['description'], args['path_scripts'], args)
+	builder.use_local_logger(args['path_log'])
+	#builder.use_neptune_logger(args['neptune_user'], args['neptune_token'])
+	#builder.use_wandb_logger(args['wandb_entity'], args['wandb_api_key'], args['wandb_group'])
+	logger = builder.build()
+	logger.log_arguments(experiment_args)
+else:
+	logger = None
 ```
 ### 2-3. Run!
 

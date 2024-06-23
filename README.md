@@ -13,7 +13,7 @@ The code will be uploaded as soon as possible after cleaning it up.
 	<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
 	<a href="https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-22-08.html#rel-22-08"><img src="https://img.shields.io/badge/22.08-2496ED?style=for-the-badge&logo=Docker&logoColor=white"></a>
 	<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white">
-	<a href="https://huggingface.co/"><img src="https://github.com/chan-yeong0519/blob/main/icon_hugging_face.png?raw=true"></a>
+	<a href="https://huggingface.co/"><img src="https://github.com/chan-yeong0519/NAW-SV/blob/main/icon_hugging_face.png?raw=true"></a>
 	</p>
 </h3>
 
@@ -23,7 +23,7 @@ This repository offers source code for the following paper:
 * **Authors** :  Chan-yeong Lim, Hyun-seo Shin, Ju-ho Kim, Jungwoo Heo, Kyo-Won Koo, Seung-bin Kim, and Ha-Jin Yu
 
 ### Paper abstract
-<img src="https://github.com/chan-yeong0519/main/NAW-SV_framework.PNG">
+<img src="https://github.com/chan-yeong0519/NAW-SV/blob/main/NAW-SV_framework.PNG">
 Adopting self-supervised pre-trained models (PMs) in speaker verification (SV) has shown remarkable performance, but their noise robustness is largely unexplored. In the field of automatic speech recognition, additional training strategies enhance the robustness of the models before fine-tuning to improve performance in noisy environments. However, directly applying these strategies to SV risks distorting speaker information. We propose a noise adaptive warm-up training for speaker verification (NAW-SV). The NAW-SV guides the PM to extract consistent representations in noisy conditions using teacher-student learning. In this approach, to prevent the speaker information distortion problem, we introduce a novel loss function called extended angular prototypical network loss, which assists in considering speaker information and exploring robust speaker embedding space. We validated our proposed framework on the noise-synthesized VoxCeleb1 test set, demonstrating promising robustness.
 
 # Prerequisites

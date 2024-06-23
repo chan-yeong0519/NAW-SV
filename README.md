@@ -26,8 +26,8 @@ This repository offers source code for the following paper:
 <img src="https://github.com/chan-yeong0519/NAW-SV/blob/main/NAW-SV_framework.PNG" width="600" height="600">
 Adopting self-supervised pre-trained models (PMs) in speaker verification (SV) has shown remarkable performance, but their noise robustness is largely unexplored. In the field of automatic speech recognition, additional training strategies enhance the robustness of the models before fine-tuning to improve performance in noisy environments. However, directly applying these strategies to SV risks distorting speaker information. We propose a noise adaptive warm-up training for speaker verification (NAW-SV). The NAW-SV guides the PM to extract consistent representations in noisy conditions using teacher-student learning. In this approach, to prevent the speaker information distortion problem, we introduce a novel loss function called extended angular prototypical network loss, which assists in considering speaker information and exploring robust speaker embedding space. We validated our proposed framework on the noise-synthesized VoxCeleb1 test set, demonstrating promising robustness.
 
-# Prerequisites
-## Environment Setting
+# 1. Prerequisites
+## 1.1. Environment Setting
 
 * We used 'nvcr.io/nvidia/pytorch:22.08-py3' image of Nvidia GPU Cloud for conducting our experiments
 * The details of the environment settings can be found in 'Dockerfile' file.
@@ -37,7 +37,7 @@ Adopting self-supervised pre-trained models (PMs) in speaker verification (SV) h
 ```
 (We conducted experiment using 2 or 4 NVIDIA RTX A5000 GPUs)
 
-## Datasets
+## 1.2. Datasets
 * We used VoxCeleb1 & 2 dataset for training and test
 * For evaluating the model in noisy conditions, we utilized MUSAN and Nonspeech100 dataset.
 * In the fine-tuning stage, for data augmentation, the MUSAN training subset and RIR reverberation datasets were employed.

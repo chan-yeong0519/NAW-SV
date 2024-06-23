@@ -23,7 +23,7 @@ This repository offers source code for the following paper:
 * **Authors** :  Chan-yeong Lim, Hyun-seo Shin, Ju-ho Kim, Jungwoo Heo, Kyo-Won Koo, Seung-bin Kim, and Ha-Jin Yu
 
 ### Paper abstract
-<img src="https://github.com/chan-yeong0519/blob/main/NAW-SV_framework.png?raw=true">
+<img src="https://github.com/chan-yeong0519/blob/main/NAW-SV_framework.PNG?raw=true">
 Adopting self-supervised pre-trained models (PMs) in speaker verification (SV) has shown remarkable performance, but their noise robustness is largely unexplored. In the field of automatic speech recognition, additional training strategies enhance the robustness of the models before fine-tuning to improve performance in noisy environments. However, directly applying these strategies to SV risks distorting speaker information. We propose a noise adaptive warm-up training for speaker verification (NAW-SV). The NAW-SV guides the PM to extract consistent representations in noisy conditions using teacher-student learning. In this approach, to prevent the speaker information distortion problem, we introduce a novel loss function called extended angular prototypical network loss, which assists in considering speaker information and exploring robust speaker embedding space. We validated our proposed framework on the noise-synthesized VoxCeleb1 test set, demonstrating promising robustness.
 
 # Prerequisites

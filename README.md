@@ -85,8 +85,9 @@ We have a basic logger that stores information in local. However, if you would l
 # Neptune: Add 'neptune_user' and 'neptune_token'
 # input this arguments in "system_args" dictionary:
 # for example
-'wandb_user'   : 'user-name',
-'wandb_token'  : 'WANDB_TOKEN',
+'wandb_group'  : 'exp-group',
+'wandb_entity'  : 'user-name',
+'wandb_api_key'  : 'WANDB_api-key',
 
 'neptune_user'  : 'user-name',
 'neptune_token' : 'NEPTUNE_TOKEN'

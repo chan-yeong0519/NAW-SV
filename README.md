@@ -87,7 +87,7 @@ We have a basic logger that stores information in local. However, if you would l
 # for example
 'wandb_group'  : 'exp-group',
 'wandb_entity'  : 'user-name',
-'wandb_api_key'  : 'WANDB_api-key',
+'wandb_api_key'  : 'WANDB_API_KEY',
 
 'neptune_user'  : 'user-name',
 'neptune_token' : 'NEPTUNE_TOKEN'

@@ -81,7 +81,7 @@ We have a basic logger that stores information in local. However, if you would l
 1. In `arguments.py`
 
 ```python
-# Wandb: Add 'wandb_user' and 'wandb_token'
+# Wandb: Add 'wandb_group', 'wandb_entity' and 'wandb_api_key'
 # Neptune: Add 'neptune_user' and 'neptune_token'
 # input this arguments in "system_args" dictionary:
 # for example

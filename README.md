@@ -120,5 +120,5 @@ Just run main.py in scripts!
 
 Please cite this paper if you make use of the code. 
 '''
-Will be added after the proceeding.
+Will be added after proceeding.
 '''

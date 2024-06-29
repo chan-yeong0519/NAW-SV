@@ -5,3 +5,5 @@ exp_logs/(phase2)_Fine-tuning/WavLM/Vox1/FT_wavlm_vox1/models/FT_vox1_wavlm_para
 exp_logs/(phase2)_Fine-tuning/WavLM/Vox1/FT_wavlm_vox1/models/FT_vox1_wavlm_params_pretrained_model.pt filter=lfs diff=lfs merge=lfs -text
 exp_logs/(phase2)_Fine-tuning/WavLM/Vox2/FT_wavlm_vox2/models/FT_vox2_wavlm_params_backend.pt filter=lfs diff=lfs merge=lfs -text
 exp_logs/(phase2)_Fine-tuning/WavLM/Vox2/FT_wavlm_vox2/models/FT_vox2_wavlm_params_pretrained_model.pt filter=lfs diff=lfs merge=lfs -text
+scripts/(phase2)_Fine-tuning/WavLM/Vox1/FT_wavlm_vox1_scripts/parameters/ filter=lfs diff=lfs merge=lfs -text
+scripts/(phase2)_Fine-tuning/WavLM/Vox2/FT_wavlm_vox2_scripts/parameters/ filter=lfs diff=lfs merge=lfs -text

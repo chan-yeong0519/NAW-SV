@@ -60,8 +60,8 @@ Set experimental arguments in `arguments.py` file. Here is list of system argume
 You can get the experimental code via hyperlinks. 
 <br> Note that we provide our **trained model weights** and **training logs** (such as loss, validation results) for re-implementation. You can find these in 'exps_logs' folder stored in each experiment folder. 
 
-1. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1">Link</a>
-2. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox2">Link</a>
+1. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1_scripts">Link</a>
+2. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox2_scripts">Link</a>
 
 ### 2.2. Fine-tuning (phase2)
 After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change the weights with the parameters in 'parameters' folder in each experiment folder.

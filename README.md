@@ -1,5 +1,3 @@
-The code will be uploaded as soon as possible after cleaning it up.
-
 <h1 align="center">
     <b>NAW-SV</b>
 </h1>

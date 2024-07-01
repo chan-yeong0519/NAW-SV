@@ -18,7 +18,7 @@
 This repository offers source code for the following paper:
 
 * **Title** : Improving Noise Robustness in Self-supervised Pre-trained Model for Speaker Verification (Accepted for Interspeech 2024)
-* **Authors** :  Chan-yeong Lim, Hyun-seo Shin, Ju-ho Kim, Jungwoo Heo, Kyo-Won Koo, Seung-bin Kim, and Ha-Jin Yu
+* **Authors** :  Chan-yeong Lim*, Hyun-seo Shin*, Ju-ho Kim, Jungwoo Heo, Kyo-Won Koo, Seung-bin Kim, and Ha-Jin Yu (*: Equal contribution)
 
 ### Paper abstract
 <img src="https://github.com/chan-yeong0519/NAW-SV/blob/main/NAW-SV_framework.PNG" width="600" height="600">

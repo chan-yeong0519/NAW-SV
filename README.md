@@ -60,15 +60,26 @@ Set experimental arguments in `arguments.py` file. Here is list of system argume
 You can get the experimental code via hyperlinks. 
 <br> Note that we provide our **trained model weights** and **training logs** (such as loss, validation results) for re-implementation. You can find these in 'exps_logs' folder stored in each experiment folder. 
 
-1. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/\(phase1\)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1">
-2. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/\(phase1\)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox2">
+1. WavLM-Base+: EER 1.45% and 2.96% in VoxCeleb1, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1">Link</a>
+2. WavLM-Base+: EER 0.85% and 2.31% in VoxCeleb2, under clean and noisy conditions, respectively. <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox2">Link</a>
 
 ### 2.2. Fine-tuning (phase2)
-After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change the weights with the parameters in 'params' folder in each experiment folder.
-(if what you wanted is just testing the model, don't change the weights.)
+After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change the weights with the parameters in 'parameters' folder in each experiment folder.
 
-1. WavLM-Base+ (VoxCeleb1). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase2)_Fine-tuning/WavLM/Vox1/NAW-SV_wavlm_vox1_scripts">
-2. WavLM-Base+ (VoxCeleb2). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase2)_Fine-tuning/WavLM/Vox2/NAW-SV_wavlm_vox2_scripts">
+1. WavLM-Base+ (VoxCeleb1). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase2)_Fine-tuning/WavLM/Vox1/NAW-SV_wavlm_vox1_scripts">Link</a>
+2. WavLM-Base+ (VoxCeleb2). <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/scripts/(phase2)_Fine-tuning/WavLM/Vox2/NAW-SV_wavlm_vox2_scripts">Link</a>
+
+(if what you wanted is just testing the model, download the pre-trained model's parameters in the exp_logs. 
+Vox1 <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1/models/">Link</a>
+Vox2 <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox1/models/">Link</a>
+
+And, revise the path of the parameters in main.py. 
+
+```python
+# model load
+ssl_path = args['path_scripts']+ f'/parameters/NAWSV_vox1_wavlm_params_pretrained_model.pt'
+ssl_sv_framework._load_state_dict(ssl_path)
+```
 
 ### Logger
 
@@ -105,18 +116,7 @@ else:
 ```
 ### 2-3. Run
 
-Download the pre-trained model's parameters in the exp_logs. 
-Vox1: <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1/models/NAWSV_vox1_wavlm_params_pretrained_model.pt">
-Vox2: <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox1/models/NAWSV_vox2_wavlm_params_pretrained_model.pt">
-And, revise the path of the parameters in main.py. 
-
-```python
-# model load
-ssl_path = args['path_scripts']+ f'/parameters/NAWSV_vox1_wavlm_params_pretrained_model.pt'
-ssl_sv_framework._load_state_dict(ssl_path)
-```
-
-Then, run main.py in scripts!
+Just run main.py in scripts!
 
 ```python
 > python main.py

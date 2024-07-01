@@ -73,6 +73,7 @@ After the NAW-SV phase, download the weights of HuBERT or WavLM. And then change
 Vox1: <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox1/NAW-SV_wavlm_vox1/models/">Link</a>
 , Vox2: <a href="https://github.com/chan-yeong0519/NAW-SV/tree/main/exp_logs/(phase1)_NAW-SV/WavLM/Vox2/NAW-SV_wavlm_vox1/models/">Link</a>
 )
+
 And, revise the path of the parameters in main.py. 
 
 ```python
